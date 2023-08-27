@@ -14,20 +14,16 @@ const students = [
 const selected= students.filter((select) =>  select.avg >= 50 && select.fiftyPercent === true);
 
 console.log(selected);
-const selectedName= selected.map((sName) => sName.name).join(' , ');
-const selecteEmail= selected.map((sMail) => sMail.email).join(' , ');
+let count=1;
+const selectedName= selected.map((sName) => `${count++}. Name: ${sName.name}  Email: ${sName.email}`).join('\n');
+
 
 
 console.log(selectedName);
-console.log(selecteEmail);
-
-let count=1;
-for(select of selected){
-    
-console.log(`${count++}. Name: ${select.name} & email: ${select.email}`);
 
 
 
 
 
-}
+
+
