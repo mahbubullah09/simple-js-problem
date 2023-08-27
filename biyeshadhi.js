@@ -13,3 +13,17 @@ const patro = [
   ];
 
 
+
+  const jamai = patro.filter((pola)=> (pola.job === 'govt' && pola.salary >= 20000) || (pola.job === "non-govt" && pola.salary >= 40000));
+
+const jamaiIndex = Math.floor(Math.random()*jamai.length);
+
+const jamaiName = jamai[jamaiIndex].name;
+const jamaiJob = jamai[jamaiIndex].job;
+const jamaiSalary = jamai[jamaiIndex].salary;
+console.log(`Name: ${jamaiName} 
+Job: ${jamaiJob}
+Salary: ${jamaiSalary}`);
+
+
+
